@@ -78,6 +78,7 @@
             this.btnIniciar.TabIndex = 4;
             this.btnIniciar.Text = "Iniciar Sesion";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // statusStrip1
             // 

@@ -12,9 +12,16 @@ namespace pryTissera_Gestion
 {
     public partial class frmPrincipal : Form
     {
+        clsUsuario Conexion;
         public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            Conexion = new clsUsuario();
+            lblstConexion.Text = Conexion.estadoConexion;
         }
     }
 }
